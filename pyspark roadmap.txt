@@ -1,0 +1,92 @@
+1. Setup & Basics
+✅ Install and set up PySpark locally (if not done yet)
+
+Install using pip install pyspark
+Set up a Jupyter Notebook or use Databricks Community Edition
+✅ Understand Spark architecture
+
+Driver, Executors, Cluster Manager
+DAG (Directed Acyclic Graph) execution
+✅ SparkContext vs SparkSession
+
+✅ Basic RDD operations (Optional, since you're more into DataFrames)
+
+2. PySpark DataFrames (Main focus area)
+✅ Creating DataFrames
+
+From CSV, JSON, Parquet, and databases
+Using createDataFrame() from lists
+✅ DataFrame Operations
+
+select(), filter(), where(), distinct(), dropDuplicates()
+withColumn(), withColumnRenamed(), drop(), alias()
+groupBy(), agg(), count(), sum(), avg(), max(), min()
+✅ Working with Schema
+
+StructType, StructField, inferSchema vs manual schema definition
+✅ Handling Nulls & Duplicates
+
+fillna(), dropna(), replace()
+Handling nulls with coalesce()
+✅ User-defined Functions (UDFs)
+
+Writing & applying UDFs
+Performance issues with UDFs (why built-in functions are preferred)
+3. Data Transformation (Core for ETL)
+✅ Joins in PySpark
+
+inner, left, right, outer, semi, anti joins
+Optimizing joins with partitioning
+✅ Window Functions (Critical for ETL)
+
+row_number(), rank(), dense_rank()
+lead(), lag(), ntile(), cume_dist()
+✅ Working with Dates & Timestamps
+
+current_date(), current_timestamp(), datediff(), date_add(), date_sub()
+Formatting timestamps
+✅ Pivot & Unpivot Data
+
+groupBy().pivot().agg()
+✅ Explode & Flatten Nested Data
+
+explode(), posexplode(), arrays_zip()
+4. Performance Optimization & Tuning
+✅ Understanding Spark Execution Plan
+
+explain()
+cache(), persist(), checkpoint()
+✅ Partitioning & Bucketing
+
+repartition(), coalesce()
+Bucketing in Hive tables
+✅ Broadcast Joins & Skew Handling
+
+broadcast() for small datasets
+Avoiding data skew in joins
+✅ Reading & Writing Efficiently
+
+Writing to Parquet, ORC (columnar formats)
+Partitioning data while writing
+Using option("header", True)
+5. Spark SQL & Query Optimization
+✅ Using SQL within PySpark (spark.sql())
+✅ Creating temporary views (createOrReplaceTempView())
+✅ Query Optimization with Catalyst Optimizer
+
+6. PySpark ETL Pipeline (Hands-on Project)
+✅ Read raw data (CSV/JSON from S3 or local)
+✅ Apply transformations (filtering, aggregation, joins)
+✅ Handle missing values & duplicates
+✅ Write processed data to S3, Snowflake, or Delta Lake
+✅ Schedule using Airflow
+
+7. Advanced Topics
+✅ Working with Delta Lake (for Data Lakes)
+✅ Integration with AWS S3, Snowflake
+✅ Structured Streaming (Optional, since you work with batch processing)
+
+How to Learn Effectively?
+Practice on Databricks Community Edition
+Try Mini-Projects (e.g., process IPL dataset, analyze Amazon reviews)
+Check Official Docs: Spark Doc
